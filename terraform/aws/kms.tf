@@ -13,6 +13,7 @@ resource "aws_kms_key" "logs_key" {
     git_repo             = "terragoat"
     yor_trace            = "3a38638b-ae6e-405b-8b9e-90036aa7614b"
   }
+  enable_key_rotation = true
 }
 
 resource "aws_kms_alias" "logs_key_alias" {
